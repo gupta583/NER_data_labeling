@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<style>
+form {
+    margin: auto;
+    width: 55%;
+}
+
+.result {
+    margin: auto;
+    width: 55%;
+    border: 1px solid #ccc;
+}
+</style>
+
+<h2> labeled text </h2>
+<table style='width:55%'>
+	<tr>
+		<th> Text </th>
+		<th> Label </th>
+		<th> Confidence score </th>
+	</tr>
+    	{% if result %}
+        	{% for token, label, score in result %}
+		{% if label not in  ['[CLS]','O','[SEP]' ]%}
+		<tr>
+			<td> {{ token }} </td>
+			<td> {{ label }} </td>
+			<td> {{ score }} </td>
+		</tr>
+		{% endif %}
+       		 {% endfor %}
+                <br>
+   	 {% endif %}
+</table>
+
+
+</html>

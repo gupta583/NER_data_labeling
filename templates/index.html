@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<style>
+form {
+    margin: auto;
+    width: 55%;
+}
+
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+
+<head>
+    <title>Data labeling tool</title>
+</head>
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+        <legend>Input text for data labeling:</legend>
+        <textarea name="text" rows="25" cols="50"> 
+	</textarea>
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<div class="result" align="center">
+    {% if result %}
+    	{% for token, label in result %}
+    		<b>{{ token }}</b> : {{ label }}
+    	{% endfor %}
+		<br>
+    	<br> Predicted number of bikes in use:
+   		<p style="font-size:50px">{{ token }}</p>
+    {% endif %}
+</div>
+
+</html>
