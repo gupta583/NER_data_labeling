@@ -12,3 +12,6 @@ python model/train_model.py
 python app.py
 
 
+# Introduction
+
+Labelled data is crucial for any machine learning model. To get the machine learnig data companies uses Excel sheet to maintain the labels of data. This project has done with datasaur.ai for labeling data tool. This uses Bert Model to label data automatically. 
