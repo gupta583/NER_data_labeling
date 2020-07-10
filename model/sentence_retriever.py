@@ -1,3 +1,5 @@
+# This uses raw data to convert it list of sentences with corresponding lables.
+# Only words and labels are extracted from the raw data
 class sentenceretriver(object):
 
     def __init__(self,data):
