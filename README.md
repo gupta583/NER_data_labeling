@@ -26,7 +26,7 @@ Model has been build in Pytorch and trained on GPUs. This model has also been de
  
 # Procedure
 
-Here I have used the publically avaialble corpus data https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus. This data has tagged using BIO format. From this data I have extracted sentences and labels of each word in sentence using "model/sentence_retriever.py". As a next step each word in sentence is tokenized using BertTokenizer from transformers libarary. This tokenizes the each word. If word is not in dictionary it will divide the word in to muliple word followed by ##, to make the labels corresponding to each divided word, labels list is also extended. 
+Here I have used the publically avaialble corpus (data https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus). This data has tagged using BIO format. From this data I have extracted sentences and labels of each word in sentence using "model/sentence_retriever.py". As a next step each word in sentence is tokenized using BertTokenizer from transformers libarary. This tokenizes the each word. If word is not in dictionary it will divide the word in to muliple word followed by ##, to make the labels corresponding to each divided word, labels list is also extended. 
 Furthermore each tokenized word is coverted to ids using convert_tokens_to_ids from BertTokenzer library. Each sentence is converted to MAX_LEN list. If sentence is less than MAX_LEN, it is masked with 0s if it is higher it is cropped. Simillary labels for each token is padded/truncated. 
 
 To train the ML model, BertforTokenClassification weights are loaded and a new classification layer of length equals to number of labels is added. Weights been modified at each epochs using backward propogation.  
