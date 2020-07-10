@@ -33,7 +33,7 @@ To train the ML model, BertforTokenClassification weights are loaded and a new c
 
 # Model deployment
 
-This model has trained on GPUs using AWS. For inferencing I have developed a Streamlit app. This app can be accessed <a href="http://quantanalytics.tech/"> here </a>. Any sentences can be entered in box which returns the labels of each word with confidence score. 
+This model has trained on GPUs using AWS EC2 instances. For inferencing I have developed a Streamlit app. This app can be accessed <a href="http://quantanalytics.tech/"> here </a>. Any sentences can be entered in box which returns the labels of each word with confidence score. 
 
 
 
