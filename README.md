@@ -18,6 +18,6 @@ Labelled data is crucial for any machine learning model. To get the machine lear
 
 For NER model, here I have used the BERT pretrained model for text classification.  To learn new labels Transfer Learnig has applied. Here I have loaded the weight of pretrained model then a new layer has been added for classification. The weight are update by calculating the gradient of binary cross entropy loss. I have used Linear Schedueler to make learning faster compared to constant linear rate. Figure shows the systematic diagram for transfer learning. 
 
-![picture](TL.png | height=50)
+![picture](TL.png | height="50")
 
 Bert Pretrained model for text classification is used and transfer learning has applied to learn new labels using Pytorch.
