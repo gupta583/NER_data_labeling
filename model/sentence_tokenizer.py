@@ -1,3 +1,5 @@
+# Each sentences is tokenized and labels are extended for tokenized words.
+
 from transformers import BertTokenizer, BertConfig
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased', do_lower_case=False)
 
