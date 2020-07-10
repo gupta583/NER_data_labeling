@@ -30,3 +30,10 @@ Here I have used the publically avaialble corpus <a href="https://www.kaggle.com
 Furthermore each tokenized word is coverted to ids using convert_tokens_to_ids from BertTokenzer library. Each sentence is converted to MAX_LEN list. If sentence is less than MAX_LEN, it is masked with 0s if it is higher it is cropped. Simillary labels for each token is padded/truncated. 
 
 To train the ML model, BertforTokenClassification weights are loaded and a new classification layer of length equals to number of labels is added. Weights been modified at each epochs using backward propogation.  
+
+# Model deployment
+
+This model has trained on GPUs using AWS. For inferencing I have developed a Streamlit app. This app can be accessed <a href="http://quantanalytics.tech/"> here </a>. Any sentences can be entered in box which returns the labels of each word with confidence score. 
+
+
+
