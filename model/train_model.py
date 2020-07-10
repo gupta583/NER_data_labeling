@@ -1,3 +1,5 @@
+# Uses BERT pretrained model. Weights are update using backward propagation. 
+
 from sentence_retriever import sentenceretriver
 from sentence_tokenizer import tokenize_sentences_labels
 import pandas as pd
