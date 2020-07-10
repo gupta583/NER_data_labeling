@@ -1,4 +1,4 @@
-# NER_data_labeling
+# NER data labeling tool
 This model labels the data using BERT pretrained model.
 Demo at http://quantanalytics.tech/
 # Setting up python environment 
@@ -20,4 +20,7 @@ For NER model, here I have used the BERT pretrained model for text classificatio
 <p align="center">
 <img src="TL.png" width="300">
 </p>
-Bert Pretrained model for text classification is used and transfer learning has applied to learn new labels using Pytorch.
+
+Model has been build in Pytorch and trained on GPUs. This model has also been deployed on AWS.
+
+ 
