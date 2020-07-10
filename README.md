@@ -17,7 +17,7 @@ python app.py
 Labelled data is crucial for any machine learning model. To get the machine learnig data companies uses Excel sheet to maintain the labels of data. This project has done with datasaur.ai for labeling data tool. datasaur.ai develops a software to label the data efficiently. 
 
 For NER model, here I have used the BERT pretrained model for text classification.  To learn new labels Transfer Learnig has applied. Here I have loaded the weight of pretrained model then a new layer has been added for classification. The weight are update by calculating the gradient of binary cross entropy loss. I have used Linear Schedueler to make learning faster compared to constant linear rate. Figure shows the systematic diagram for transfer learning. 
-
-!<img src="TL.png" width="300">
-
+<p align="center">
+<img src="TL.png" width="300">
+</p>
 Bert Pretrained model for text classification is used and transfer learning has applied to learn new labels using Pytorch.
